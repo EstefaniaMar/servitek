@@ -1,0 +1,14 @@
+$colorbg: blue;
+$widhth1: 200px;
+$w2:$widhth1+20px;
+
+
+p{ 
+    width: $w2;
+}
+
+ul{ 
+    list-style: none;
+    padding: 0;
+    margin:60px 0;
+}

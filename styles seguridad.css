@@ -1,0 +1,269 @@
+h1 {
+    color: #12233b;
+}
+h1.quienesSomos {
+    color: rgb(0, 0, 0);
+}
+div {
+    color: #000000;
+}
+p {
+    color: rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    color: #12233b;
+}
+
+ul li {
+    color: #12233b;
+}
+
+section {
+    flex: 70%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+section article{
+    color: #000000;
+    width: 300px;
+    height: 300px;
+}
+
+.bordesRedondeados {
+    border-radius: 20px;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+.header{
+    text-align: center;
+    padding: 50px;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    margin: 30px auto;
+    background: #fff;
+} 
+
+.navegacion ul{
+    padding: 14px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside{
+    flex: 30px;
+    padding: 20px;
+    background-color: rgb(238, 247, 238);
+}
+
+
+.menu > li{
+    position:relative;
+    display: inline-block;
+}
+
+.menu > li >a{
+    display: block;
+    padding: 15px 20px;
+    color: #3a3b3d;   
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+ color: rgb(2, 2, 2);
+ transition: all 0.3s;
+}
+
+.submenu {
+    position: absolute;
+    background: #ffffff;
+    width: 150%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color:#fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+}
+
+.submenu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.table{
+    align-items: center;
+}
+
+.formatoItalica {
+	font-style: italic;
+	text-align: right;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+}
+section article {
+	background-color: #131022;
+	width: 500px;
+	height: 300px;
+	padding: 40px;
+}
+
+section article p {
+	line-height: 4;
+}
+
+.otraSeccion {
+	margin: 0px 80px;
+
+}
+
+.otraSeccion h3 {
+	letter-spacing: 2rem;
+	font-size: 2rem;
+
+}
+.flex-container {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+}   
+.flex-container div {
+    background-color: rgb(238, 247, 238);
+    margin: 5px;
+    color: cornsilk;
+    flex-basis: 230px;
+    font-size: large;
+}   
+ @media(max-width:600px){
+    .flex-container {
+    flex-direction: column;
+    }   
+    .flex-container div {
+        flex-basis: 100%;
+    }  
+    .columna{
+        flex: 100%;
+    }  
+} 
+
+@media(max-width:800px){
+    .columna{
+        flex: 50%;
+    }  
+} 
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(253, 253, 253);
+}  
+*{
+    box-sizing: border-box;
+} 
+img{
+    width: 300px;
+    height: auto;
+} 
+
+.filas{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+} 
+
+.columna{
+  flex: 25%;
+    padding: 5px;
+} 
+
+.columna img{
+    margin-top: 5px;
+  } 
+
+.grid-container{
+    display: grid;
+    background-color: rgb(243, 240, 234);
+    grid-template-areas: 'primerap primerap primerap' 'segundap tercerap tercerap' 'segundap cuartoap cuartoap' 'quintoap quintoap quintoap' 'sextoap sextoap sextoap';
+  }
+
+
+.grid-container div{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+  }
+
+.item1{
+    grid-area: primerap;
+}
+.item2{
+    grid-area: segundap;
+}
+.item3{
+    grid-area: tercerap;
+}
+.item4{
+    grid-area: cuartoap;
+}
+.item5{
+    grid-area: quintoap;
+}
+
+.item6{
+    grid-area: sextoap;
+}
+
+.titul{
+    clip-path: polygon(0 0, 85% 0, 99% 100%, 0 100%);
+
+}
+
+h2 {
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+  }
+
+  .slidein {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left:100%;
+      width:300%
+    }
+  
+    to {
+     margin-left:0%;
+     width:100%;
+   }
+  }
